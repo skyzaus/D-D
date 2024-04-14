@@ -1,3 +1,21 @@
 .chrImg {
   width: 200px;
+  
+}
+body{
+  height: 100%;
+  background-image: url(https://www.shutterstock.com/image-vector/virtual-realm-immersive-mmorpg-timid-600nw-2322198399.jpg);
+  
+  background-size:cover
+}
+
+li::marker {
+ 
+ color: gold
+}
+
+ul > li {
+  font-size: 1.5em;
+  
+    
 }
