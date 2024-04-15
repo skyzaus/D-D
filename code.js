@@ -67,13 +67,37 @@ class player {
 
 
 
+
+
+
+
+
+
+function newChr(){
 let myCharacter = new player();
 console.log(myCharacter);
+return myCharacter
+}
+
+
+//test character
+let myCharacter2 = new player();
+console.log(myCharacter2);
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+function getImg(){ 
 let dndImg = [
   "https://assetsio.gnwcdn.com/dnd-5e-strixhaven-curriculum-of-chaos-artwork-3.jpg?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp",
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7jnA5P1ESZtl3D_V6FYt1vIYNJmn3BvNm1h3W6duoOA&s",
@@ -90,11 +114,20 @@ let randomIMG = dndImg[rdmImg];
 chrRdmImg = randomIMG;
 
 console.log(chrRdmImg);
+return (chrRdmImg)
 
-for (const [key, value] of Object.entries(myCharacter)) {
+}
+
+
+
+
+
+
+function createNPC(){
+for (const [key, value] of Object.entries(newChr())) {
   console.log(`${key}: ${value}`);
 }
-let entries = Object.entries(myCharacter);
+let entries = Object.entries(newChr());
 let data = entries.map(([key, val] = entry) => {
   return `${key}: ${val}`;
 });
@@ -104,7 +137,7 @@ let ul = document.createElement("ul");
 
 let img = document.createElement("img");
 img.className = `chrImg`;
-img.src = `${chrRdmImg}`;
+img.src = getImg();
 ul.appendChild(img);
 
 for (let i = 0; i < data.length; i++) {
@@ -113,3 +146,7 @@ for (let i = 0; i < data.length; i++) {
   ul.appendChild(li);
 }
 document.getElementById("myList").appendChild(ul);
+
+}
+
+document.getElementById("submitNPC").addEventListener("click", createNPC);

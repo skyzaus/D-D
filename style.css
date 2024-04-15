@@ -4,7 +4,7 @@
 }
 body{
   height: 100%;
-  background-image: url(https://www.shutterstock.com/image-vector/virtual-realm-immersive-mmorpg-timid-600nw-2322198399.jpg);
+  background-image: url(https://wallpapergod.com/images/hd/dark-anime-1920X1080-wallpaper-u6fb9zavd2wtx3fq.webp);
   
   background-size:cover
 }
@@ -16,6 +16,11 @@ li::marker {
 
 ul > li {
   font-size: 1.5em;
-  
+ color: lightblue;
     
+}
+
+ul{
+  display: inline-block;
+
 }
