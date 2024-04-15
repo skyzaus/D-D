@@ -1,3 +1,9 @@
+
+const removeBtn = document.querySelector("#remove");
+const imgContainer = document.querySelector("#heroNPC");
+
+
+
 class player {
   constructor() {
     this.Name = this.getRandomName();
@@ -105,6 +111,19 @@ let dndImg = [
   "https://cdn.geekwire.com/wp-content/uploads/2021/07/Strixhaven_Cover_Art.jpg",
   "https://images.ctfassets.net/0piqveu8x9oj/7xkbfuRW3hWVoneQ13sI94/f97f0e8982c6ef35a71eeeea42f9d6a1/Articles_Header_Image_w07_2.jpg?q=80",
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUZjmVAtCn5lgDeANzSnnPgCW79vs2mG5ZxM6AzSoopw&s",
+"https://i.pinimg.com/236x/03/4b/de/034bde783ea726b922100c86547831e8.jpg",
+  "https://diffusionart.co/wp-content/uploads/2023/04/Character-Anime-Manga-NFT-Profile-Pictures2.png",
+  "https://qph.cf2.quoracdn.net/main-qimg-603a70b456b433931e2fbd534710ca95-lq",
+  "https://wallpapers.com/images/hd/aesthetic-anime-profile-pictures-7itw2zu0i0mhhwwl.jpg",
+  "https://i.pinimg.com/736x/80/53/76/805376efa690607d2fc932f9f1e49cbb.jpg",
+  "https://cdn.imgchest.com/files/e4gdcveeg34.png",
+  "https://i.etsystatic.com/37020257/r/il/7247b2/5757417126/il_300x300.5757417126_h6ft.jpg"
+
+
+
+
+
+
 ];
 
 let rdmImg = Math.floor(Math.random() * dndImg.length);
@@ -134,6 +153,7 @@ let data = entries.map(([key, val] = entry) => {
 console.log(data);
 
 let ul = document.createElement("ul");
+ul.setAttribute("id", "remove");
 
 let img = document.createElement("img");
 img.className = `chrImg`;
@@ -145,8 +165,13 @@ for (let i = 0; i < data.length; i++) {
   li.textContent = data[i];
   ul.appendChild(li);
 }
-document.getElementById("myList").appendChild(ul);
+document.getElementById("heroNPC").appendChild(ul);
 
 }
 
 document.getElementById("submitNPC").addEventListener("click", createNPC);
+
+removeBtn.addEventListener("click", function (e) {
+  console.log(e.target);
+  heroNPC.innerHTML = "";
+});
