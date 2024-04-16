@@ -1,5 +1,12 @@
 //This code is written and maintained by Zachary Dix
 
+
+function roll100(){
+Math. floor(Math. random() * 100) + 1;
+}
+
+
+
 function getRandomInt(max) { //return number from 1 to max
 	return Math.floor(Math.random() * max) + 1;
 }
@@ -2736,15 +2743,15 @@ function rollTable(cr) {
 		return result;
 	}
 }
+//NOT SURE WHAT TO DO WITH THIS CODE YET
+// on("chat:message", function(msg) {
+//     'use strict'
 
-function on(msg) {
-    'use strict'
+//     if(msg.type == "api" && msg.content.indexOf("!loot ") !== -1) {
 
-    if(msg.type == "api" && msg.content.indexOf("!loot ") !== -1) {
+//         let cr = Number(msg.content.replace("!loot ", ""));
+// 		let content = rollTable(cr);
 
-        let cr = Number(msg.content.replace("!loot ", ""));
-		let content = rollTable(cr);
-
-        
-    }
-};
+//         sendChat("GM", content);
+//     }
+// });

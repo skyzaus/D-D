@@ -1,0 +1,15 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+  height: 100%;
+  background-image: url(https://wallpapers.com/images/hd/treasure-1920-x-1080-background-boef6qwxai9zidt0.jpg);
+  background-size: 100%;
+}
+#monster {
+  color: darkred;
+  font-size: 2em;
+}
+#heroNPC {
+  color: darkblue;
+  font-size: 2em;
+}
