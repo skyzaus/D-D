@@ -1,9 +1,7 @@
 //This code is written and maintained by Zachary Dix
+const removeBtn = document.querySelector("#remove");
 
-
-function roll100(){
-Math. floor(Math. random() * 100) + 1;
-}
+const max = 100
 
 
 
@@ -2741,8 +2739,20 @@ function rollTable(cr) {
 		}
 		result += gold + " gold";
 		return result;
+	
+		
 	}
+	
+
+
+
+
 }
+
+
+	
+
+
 //NOT SURE WHAT TO DO WITH THIS CODE YET
 // on("chat:message", function(msg) {
 //     'use strict'
@@ -2755,3 +2765,23 @@ function rollTable(cr) {
 //         sendChat("GM", content);
 //     }
 // });
+
+function createNPC(){
+
+	
+	
+	
+	
+	
+	
+	
+	console.log(rollTable(0))
+	return rollTable(0)
+}
+	
+	document.getElementById("submitNPC").addEventListener("click",  createNPC);
+	
+	removeBtn.addEventListener("click", function (e) {
+	  console.log(e.target);
+	  heroNPC.innerHTML = "";
+	});
