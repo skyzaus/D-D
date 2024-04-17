@@ -164,10 +164,17 @@ for (let i = 0; i < data.length; i++) {
   let li = document.createElement("li");
   li.textContent = data[i];
   ul.appendChild(li);
+
+
+
+
 }
 document.getElementById("heroNPC").appendChild(ul);
 
+
 }
+
+
 
 document.getElementById("submitNPC").addEventListener("click", createNPC);
 
@@ -175,3 +182,12 @@ removeBtn.addEventListener("click", function (e) {
   console.log(e.target);
   heroNPC.innerHTML = "";
 });
+
+// const div = document.createElement("div");
+// div.classList.add("cancleSymbol");
+// div.innerHTML = "&#10060";
+// ul.appendChild(div);
+
+// div.addEventListener("click", function(e) {
+// e.target.parentNode.remove();
+// })

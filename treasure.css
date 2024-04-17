@@ -1,0 +1,36 @@
+body {
+  height: 100%;
+  background-image: url(https://wallpapers.com/images/hd/treasure-1920-x-1080-background-boef6qwxai9zidt0.jpg);
+  background-size: 100%;
+}
+#monster {
+  color: darkred;
+  font-size: 2em;
+}
+#index {
+  color: darkblue;
+  font-size: 2em;
+}
+
+#heroNPC{
+	color: gold;
+	font-size: 2em;
+}
+
+ .cancleSymbol:hover {
+    opacity: 1.6;
+    z-index: 20;
+} 
+
+.cancleSymbol {
+    width: 15px;
+    height: 15px;
+    content: "&#10060";
+    position: relative;
+    cursor: pointer;
+    transform: translate(-50%, -66%);
+    font-weight: 700;
+    
+    font-size: .5em;
+     opacity: .5;
+}

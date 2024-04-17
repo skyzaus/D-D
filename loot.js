@@ -2749,8 +2749,42 @@ function rollTable(cr) {
 
 }
 
+function getNumber(){
+	
+	let lootNumber = prompt("choose loot value, The highter the number the better the loot", "");
+
+
+return rollTable(lootNumber)
+
+
+
+}
+
+
+
+
+function displayLoot(){
+
+let ul = document.getElementById("heroNPC");
+
+
+//let ul = document.createElement("ul");
 
 	
+     let li = document.createElement("li");
+      li.textContent = getNumber();
+      console.log(li.textContent)
+	  ul.appendChild(li);
+
+	  const removeBtn = document.createElement("div");
+  removeBtn.classList.add("cancleSymbol");
+  removeBtn.innerHTML = "&#10060";
+  li.appendChild(removeBtn);
+
+  li.addEventListener("click", function(e) {
+  e.target.parentNode.remove();
+ })}
+
 
 
 //NOT SURE WHAT TO DO WITH THIS CODE YET
@@ -2766,20 +2800,7 @@ function rollTable(cr) {
 //     }
 // });
 
-function createNPC(){
-
-	
-	
-	
-	
-	
-	
-	
-	console.log(rollTable(0))
-	return rollTable(0)
-}
-	
-	document.getElementById("submitNPC").addEventListener("click",  createNPC);
+	document.getElementById("submitLoot").addEventListener("click",  displayLoot);
 	
 	removeBtn.addEventListener("click", function (e) {
 	  console.log(e.target);

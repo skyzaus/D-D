@@ -32,3 +32,20 @@ ul {
   color: gold;
   font-size: 2em;
 }
+.cancleSymbol:hover {
+  opacity: 1.6;
+  z-index: 20;
+} 
+
+.cancleSymbol {
+  width: 15px;
+  height: 15px;
+  content: "&#10060";
+  position: relative;
+  cursor: pointer;
+  transform: translate(-50%, -66%);
+  font-weight: 700;
+  
+  font-size: .5em;
+   opacity: .5;
+}
