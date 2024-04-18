@@ -4,17 +4,17 @@ body {
   background-size: 100%;
 }
 #monster {
-  color: darkred;
-  font-size: 2em;
+  color: red;
+  font-size: 1.5em;
 }
 #index {
-  color: darkblue;
-  font-size: 2em;
+  color: lightgreen;
+  font-size: 1.5em;
 }
 
-#heroNPC{
+#heroLoot{
 	color: gold;
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
  .cancleSymbol:hover {

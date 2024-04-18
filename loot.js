@@ -2765,7 +2765,7 @@ return rollTable(lootNumber)
 
 function displayLoot(){
 
-let ul = document.getElementById("heroNPC");
+let ul = document.getElementById("heroLoot");
 
 
 //let ul = document.createElement("ul");
@@ -2804,5 +2804,5 @@ let ul = document.getElementById("heroNPC");
 	
 	removeBtn.addEventListener("click", function (e) {
 	  console.log(e.target);
-	  heroNPC.innerHTML = "";
+	  heroLoot.innerHTML = "";
 	});

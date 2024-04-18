@@ -1,7 +1,7 @@
-
-
 .chrImg {
   width: 150px;
+ 
+   
 }
 body {
   height: 100%;
@@ -17,35 +17,47 @@ li::marker {
 ul > li {
   font-size: 1.5em;
   color: lightblue;
+  
 }
 
 ul {
   display: inline-block;
+ 
+  position: flex;
 }
 
 #monster {
-  color: darkred;
-  font-size: 2em;
+  color: red;
+  font-size: 1.5em;
 }
 
 #loot {
   color: gold;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .cancleSymbol:hover {
-  opacity: 1.6;
-  z-index: 20;
+    opacity: 1.6;
+    z-index: 20;
 } 
 
 .cancleSymbol {
-  width: 15px;
-  height: 15px;
-  content: "&#10060";
-  position: relative;
-  cursor: pointer;
-  transform: translate(-50%, -66%);
-  font-weight: 700;
-  
-  font-size: .5em;
-   opacity: .5;
+    width: 15px;
+    height: 15px;
+    content: "&#10060";
+    float: right;
+    cursor: pointer;
+    transform: translate(-50%, -66%);
+    font-weight: 700;
+   
+    font-size: 1em;
+     opacity: .5;
+}
+#row{
+    border: 5px;
+    padding: 5px;
+}
+
+.remove{
+     border: 1px;
+    padding: 1px;
 }
