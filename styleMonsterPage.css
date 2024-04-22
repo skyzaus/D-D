@@ -6,27 +6,22 @@ body {
 
 #heroNPC {
   color: lightgreen;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 #loot {
   color: gold;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 #monster {
   color: brightred;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
-@media (max-device-width: 480px) and (orientation: portrait) {
-  .landscape-in-phone {  
-        display:block;
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        transform: rotate(90deg);
-         min-width:460px;
-    }  
+#row{
+  border: 5px;
+  padding: 5px;
+  justify-content: space-between;
 }
+
