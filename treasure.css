@@ -1,11 +1,11 @@
 body {
-  height: 100%;
+  height: auto;
   background-image: url(https://wallpapers.com/images/hd/treasure-1920-x-1080-background-boef6qwxai9zidt0.jpg);
-  background-size: 100%;
+  background-size: auto;
 }
 #monster {
   color: red;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 #index {
   color: lightgreen;
