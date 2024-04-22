@@ -18,3 +18,15 @@ body {
   color: brightred;
   font-size: 1.5em;
 }
+
+@media (max-device-width: 480px) and (orientation: portrait) {
+  .landscape-in-phone {  
+        display:block;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+         min-width:460px;
+    }  
+}
